@@ -22,5 +22,7 @@
 
 # … except our stuff.
 !/wordpress/wp-content/plugins/mailhog.php
-!/wordpress/wp-content/themes/zakra
+!/wordpress/wp-content/themes/kn-portfolio
 
+# but exclude node_modules
+/wordpress/wp-content/themes/kn-portfolio/node_modules
