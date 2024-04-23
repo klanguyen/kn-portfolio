@@ -17,7 +17,7 @@
 
 	<?php do_action( 'kn_portfolio_header' ); ?>
 
-	<header>
+	<header class="sticky top-0 bg-white/80 backdrop-blur-md">
 
 		<div class="mx-auto container">
 			<div class="lg:flex lg:justify-between lg:items-center border-b py-6">
@@ -56,10 +56,10 @@
 				wp_nav_menu(
 					array(
 						'container_id'    => 'primary-menu',
-						'container_class' => 'hidden bg-gray-100 mt-4 p-4 lg:mt-0 lg:p-0 lg:bg-transparent lg:block',
+						'container_class' => 'hidden bg-gray-100 mt-4 p-4 lg:mt-0 lg:p-0 lg:bg-transparent lg:block lg:items-center',
 						'menu_class'      => 'lg:flex lg:-mx-4',
 						'theme_location'  => 'primary',
-						'li_class'        => 'lg:mx-4',
+						'li_class'        => 'lg:mx-4 py-2',
 						'fallback_cb'     => false,
 					)
 				);

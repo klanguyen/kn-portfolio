@@ -76,3 +76,20 @@
          url('./../fonts/poppins/Poppins-Black.woff') format('woff');
     font-display: swap;
 }
+
+.custom-logo-link img {
+    height: 3em;
+    width: auto;
+}
+
+#primary-menu ul li:not(.primary-button):hover {
+    @apply text-primary;
+}
+
+.primary-button {
+    @apply inline-flex bg-primary text-white cursor-pointer rounded-md font-semibold py-2 px-4;
+}
+
+.primary-button:hover{
+    @apply bg-primary/80 text-white;
+}

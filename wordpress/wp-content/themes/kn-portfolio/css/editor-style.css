@@ -37,6 +37,12 @@
         max-width: 1440px
     }
 }
+.sticky {
+    position: sticky
+}
+.top-0 {
+    top: 0px
+}
 .m-8 {
     margin: 2rem
 }
@@ -82,6 +88,9 @@
 }
 .flex {
     display: flex
+}
+.inline-flex {
+    display: inline-flex
 }
 .hidden {
     display: none
@@ -143,6 +152,12 @@
 .rounded-xl {
     border-radius: 0.75rem
 }
+.rounded-lg {
+    border-radius: 0.5rem
+}
+.rounded-md {
+    border-radius: 0.375rem
+}
 .border {
     border-width: 1px
 }
@@ -179,6 +194,12 @@
 .bg-white {
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity))
+}
+.bg-primary\/80 {
+    background-color: rgb(14 165 233 / 0.8)
+}
+.bg-white\/80 {
+    background-color: rgb(255 255 255 / 0.8)
 }
 .bg-gradient-to-r {
     background-image: linear-gradient(to right, var(--tw-gradient-stops))
@@ -242,6 +263,10 @@
 .py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem
+}
+.py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem
 }
 .text-center {
     text-align: center
@@ -339,6 +364,24 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale
 }
+.brightness-75 {
+    --tw-brightness: brightness(.75);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
+}
+.brightness-90 {
+    --tw-brightness: brightness(.9);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
+}
+.backdrop-blur-md {
+    --tw-backdrop-blur: blur(12px);
+    -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+            backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)
+}
+.backdrop-brightness-90 {
+    --tw-backdrop-brightness: brightness(.9);
+    -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+            backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)
+}
 .transition-colors {
     transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -396,7 +439,7 @@
     color: #4b5563
 }
 body {
-    font-family: Poppins
+    font-family: Poppins, sans-serif
 }
 .wp-block {
     max-width: 1280px
@@ -406,6 +449,17 @@ body {
 }
 .wp-block[data-align=full] {
     max-width: 100%
+}
+.hover\:text-primary:hover {
+    --tw-text-opacity: 1;
+    color: rgb(14 165 233 / var(--tw-text-opacity))
+}
+.hover\:brightness-75:hover {
+    --tw-brightness: brightness(.75);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
+}
+.focus\:font-bold:focus {
+    font-weight: 700
 }
 .focus\:outline-none:focus {
     outline: 2px solid transparent;
