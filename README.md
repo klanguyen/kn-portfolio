@@ -42,7 +42,7 @@ docker exec -it docker-dock-it-wpcli-1 bash
    wp plugin --help
    wp plugin list
    wp plugin delete hello akismet
-   wp plugin install health-check query-monitor loco-translate --activate
+   wp plugin install health-check query-monitor loco-translate font-awesome --activate
    ```
 
 ## Lab
