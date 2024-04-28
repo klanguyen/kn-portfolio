@@ -543,6 +543,9 @@ video {
 .top-0{
     top: 0px;
 }
+.col-span-2{
+    grid-column: span 2 / span 2;
+}
 .m-8{
     margin: 2rem;
 }
@@ -579,6 +582,9 @@ video {
 .mr-2{
     margin-right: 0.5rem;
 }
+.mt-3{
+    margin-top: 0.75rem;
+}
 .mt-4{
     margin-top: 1rem;
 }
@@ -590,6 +596,9 @@ video {
 }
 .inline-flex{
     display: inline-flex;
+}
+.grid{
+    display: grid;
 }
 .hidden{
     display: none;
@@ -630,6 +639,9 @@ video {
 .list-disc{
     list-style-type: disc;
 }
+.grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
 .flex-col{
     flex-direction: column;
 }
@@ -641,6 +653,12 @@ video {
 }
 .justify-between{
     justify-content: space-between;
+}
+.gap-4{
+    gap: 1rem;
+}
+.gap-10{
+    gap: 2.5rem;
 }
 .rounded{
     border-radius: 0.25rem;
@@ -677,6 +695,9 @@ video {
     --tw-bg-opacity: 1;
     background-color: rgb(14 165 233 / var(--tw-bg-opacity));
 }
+.bg-primary\/50{
+    background-color: rgb(14 165 233 / 0.5);
+}
 .bg-primary\/80{
     background-color: rgb(14 165 233 / 0.8);
 }
@@ -689,6 +710,12 @@ video {
 }
 .bg-white\/80{
     background-color: rgb(255 255 255 / 0.8);
+}
+.bg-primary\/40{
+    background-color: rgb(14 165 233 / 0.4);
+}
+.bg-primary\/10{
+    background-color: rgb(14 165 233 / 0.1);
 }
 .bg-gradient-to-r{
     background-image: linear-gradient(to right, var(--tw-gradient-stops));
@@ -713,6 +740,9 @@ video {
 }
 .to-90\%{
     --tw-gradient-to-position: 90%;
+}
+.p-1{
+    padding: 0.25rem;
 }
 .p-4{
     padding: 1rem;
@@ -822,10 +852,6 @@ video {
 .text-primary{
     --tw-text-opacity: 1;
     color: rgb(14 165 233 / var(--tw-text-opacity));
-}
-.text-red-400{
-    --tw-text-opacity: 1;
-    color: rgb(248 113 113 / var(--tw-text-opacity));
 }
 .text-white{
     --tw-text-opacity: 1;
@@ -1084,8 +1110,20 @@ article > *:not(.entry-content),
         display: flex;
     }
 
+    .md\:grid{
+        display: grid;
+    }
+
     .md\:w-1\/2{
         width: 50%;
+    }
+
+    .md\:grid-cols-3{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .md\:gap-10{
+        gap: 2.5rem;
     }
 
     .md\:text-3xl{
