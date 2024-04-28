@@ -2,7 +2,7 @@
 
 <div class="container mx-auto my-8">
 
-	<?php if ( have_posts() ) : ?>
+	<?php if ( have_posts() && !is_front_page() ) : ?>
 		<?php
 		while ( have_posts() ) :
 			the_post();

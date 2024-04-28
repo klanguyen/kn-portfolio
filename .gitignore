@@ -14,7 +14,7 @@
 # … except plugins, themes, and uploads …
 !/wordpress/wp-content/plugins
 !/wordpress/wp-content/themes
-!/wordpress/wp-content/uploads
+/wordpress/wp-content/uploads
 
 # Now exclude everything in plugins and themes …
 /wordpress/wp-content/plugins/*

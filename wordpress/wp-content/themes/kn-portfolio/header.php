@@ -72,23 +72,33 @@
 
 		<?php if ( is_front_page() ) { ?>
 			<!-- Start introduction -->
-			<div class="container mx-auto">
-				<div class="px-12 py-16 my-12 rounded-xl bg-gradient-to-r from-blue-50 from-10% via-sky-100 via-30% to-blue-200 to-90%">
-                    <div class="mx-auto max-w-screen-md">
-                        <h1 class="text-3xl lg:text-6xl tracking-tight font-extrabold text-gray-800 mb-6">Start building your next <a href="https://tailwindcss.com" class="text-secondary">Tailwind CSS</a> flavoured WordPress theme
-                            with <a href="https://tailpress.io" class="text-primary">TailPress</a>.</h1>
-                        <p class="text-gray-600 text-xl font-medium mb-10">TailPress is your go-to starting
-                            point for developing WordPress themes with Tailwind CSS and comes with basic block-editor support out
-                            of the box.</p>
-                        <a href="https://github.com/jeffreyvr/tailpress"
-                            class="w-full sm:w-auto flex-none bg-gray-900 text-white text-lg leading-6 font-semibold py-3 px-6 border border-transparent rounded-xl focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-gray-900 focus:outline-none transition-colors duration-200">View
-                            on GitHub</a>
+            <section class="bg-gradient-to-r from-blue-50 from-10% via-sky-100 via-30% to-blue-200 to-90%">
+                <div class="container mx-auto">
+                    <div class="px-12 py-16 rounded-xl">
+                        <div class="mx-auto max-w-screen-md text-gray-800">
+                            <h1 class="text-3xl lg:text-6xl tracking-tight font-extrabold mb-3">Hi, I'm Kayla Nguyen</h1>
+                            <h2 class="text-xl lg:text-3xl font-bold mb-4">Web Developer & UI/UX Designer</h2>
+                            <p class="text-gray-600 lg:text-xl font-medium mb-8">Passionate and innovative Front-End Web Developer with 4+ years of experience in crafting seamless user experiences and pixel-perfect designs. Proficient in a variety of web technologies, I specialize in turning ideas into captivating and responsive websites. With a keen eye for detail and a commitment to staying updated with the latest industry trends, I thrive on creating intuitive interfaces that elevate user engagement.</p>
+                            <div class="w-full sm:w-auto">
+                                <a href="https://linkedin.com/in/nguyen-hp-nguyen/"
+                                    class="primary-outline-button mr-2 mb-2" target="_blank"><i class="fa-brands fa-linkedin-in fa-lg mr-2"></i>LinkedIn</a>
+                                <a href="https://github.com/klanguyen"
+                                   class="primary-outline-button mr-2 mb-2" target="_blank"><i class="fa-brands fa-github fa-lg mr-2"></i>GitHub</a>
+                                <a href="mailto:kaylang.dev@gmail.com"
+                                   class="primary-outline-button mb-2" target="_blank"><i class="fa-solid fa-envelope fa-lg mr-2"></i>Email</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-			</div>
+            </section>
 			<!-- End introduction -->
 		<?php } ?>
 
 		<?php do_action( 'kn_portfolio_content_start' ); ?>
 
 		<main>
+            <?php
+            if ( is_front_page() ) {
+                get_template_part('template-parts/content', 'front-page');
+            }
+            ?>
