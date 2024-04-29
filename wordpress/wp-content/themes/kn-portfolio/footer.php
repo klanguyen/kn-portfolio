@@ -22,7 +22,7 @@
         </div>
     </div>
 </section>
-<footer id="colophon" class="site-footer bg-gray-50" role="contentinfo">
+<footer id="colophon" class="site-footer bg-white" role="contentinfo">
 	<?php do_action( 'kn_portfolio_footer' ); ?>
     <div class="container mx-auto py-12 border-b-[1px] border-gray-300">
         <?php dynamic_sidebar( 'kn-portfolio-footer' ); ?>
