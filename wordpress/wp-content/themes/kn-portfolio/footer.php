@@ -6,12 +6,31 @@
 </div>
 
 <?php do_action( 'kn_portfolio_content_after' ); ?>
-
-<footer id="colophon" class="site-footer bg-gray-50 py-12" role="contentinfo">
+<section class="text-gray-50 bg-gray-800">
+    <div class="container mx-auto">
+        <div class="py-16 px-12">
+            <div class="mx-auto max-w-screen-md md:grid md:grid-cols-3 md:gap-10">
+                <div class="col-span-2 text-xl lg:text-2xl font-bold">
+                    <p>Interested in working together?</p>
+                    <p>We should queue up a time to chat.</p>
+                    <p>Coffee is on me.</p>
+                </div>
+                <div class="flex items-center justify-self-end">
+                    <a href="mailto:kaylang.dev@gmail.com" class="primary-button mt-4 md:mt-0">Let's do this <i class="fa-solid fa-arrow-right ml-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer id="colophon" class="site-footer bg-gray-50" role="contentinfo">
 	<?php do_action( 'kn_portfolio_footer' ); ?>
-
-	<div class="container mx-auto text-center text-gray-500">
-		&copy; <?php echo date_i18n( 'Y' );?> - <?php echo get_bloginfo( 'name' );?>
+    <div class="container mx-auto py-12 border-b-[1px] border-gray-300">
+        <?php dynamic_sidebar( 'kn-portfolio-footer' ); ?>
+    </div>
+	<div class="container mx-auto py-6">
+        <p class="text-center text-sm text-gray-500">
+            Copyright &copy; <?php echo date_i18n( 'Y' );?> Kayla Nguyen  |  All Rights Reserved
+        </p>
 	</div>
 </footer>
 

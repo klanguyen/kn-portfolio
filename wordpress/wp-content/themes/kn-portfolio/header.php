@@ -17,7 +17,7 @@
 
 	<?php do_action( 'kn_portfolio_header' ); ?>
 
-	<header class="sticky top-0 bg-white/80 backdrop-blur-md">
+	<header class="sticky top-0 z-10 bg-white/80 backdrop-blur-md">
 
 		<div class="mx-auto container">
 			<div class="lg:flex lg:justify-between lg:items-center border-b py-6">

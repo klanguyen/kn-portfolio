@@ -107,3 +107,16 @@ function kn_portfolio_nav_menu_add_submenu_class( $classes, $args, $depth ) {
 }
 
 add_filter( 'nav_menu_submenu_css_class', 'kn_portfolio_nav_menu_add_submenu_class', 10, 3 );
+
+function kn_portfolio_widgets_init() {
+    register_sidebar(
+        array(
+            'name'          => esc_html__( 'Footer', 'kn-portfolio' ),
+            'id'            => 'kn-portfolio-footer',
+            'description'   => esc_html__( 'Add widgets here.', 'kn-portfolio' ),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+        )
+    );
+}
+add_action( 'widgets_init', 'kn_portfolio_widgets_init' );

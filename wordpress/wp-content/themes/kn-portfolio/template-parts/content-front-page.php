@@ -33,7 +33,7 @@ $skills = array(
 
 <section class="mx-auto container text-gray-800 border-b-[1px] border-gray-200">
     <div class="py-16 md:grid md:grid-cols-3 md:gap-10">
-        <img src="wp-content/themes/kn-portfolio/images/portrait.jpg" class="rounded-md mb-8" alt="Kayla portrait">
+        <img src="wp-content/themes/kn-portfolio/images/portrait.jpg" class="rounded-md mb-8 md:mb-0" alt="Kayla portrait">
         <div class="col-span-2">
             <span class="bg-primary/10 p-1 rounded-md border-[1px] border-primary text-sm tracking-wide">About me</span>
             <h2 class="mt-4 text-xl lg:text-3xl font-bold mb-4">Transforming visions into exceptional websites</h2>
