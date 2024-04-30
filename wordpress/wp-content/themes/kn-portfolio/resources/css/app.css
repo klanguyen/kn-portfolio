@@ -108,7 +108,7 @@
 }
 
 .footer-nav {
-    @apply inline-flex;
+    @apply text-center mb-2 md:mb-0 md:inline-flex;
 }
 
 .footer-nav > li {
