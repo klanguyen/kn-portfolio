@@ -85,7 +85,11 @@
 }
 
 #primary-menu ul li:not(.primary-button):hover {
-    @apply text-primary transition-colors duration-200;
+    @apply text-secondary transition-colors duration-200;
+}
+
+#primary-menu ul li:not(.primary-button) {
+    @apply font-semibold;
 }
 
 .primary-button {
@@ -94,6 +98,14 @@
 
 .primary-button:hover{
     @apply bg-primary/80 text-white;
+}
+
+.secondary-button {
+    @apply inline-flex items-center bg-secondary text-black cursor-pointer rounded-md font-semibold py-2 px-4 transition-colors duration-200;
+}
+
+.secondary-button:hover{
+    @apply bg-secondary/80 text-black;
 }
 
 .primary-outline-button {
@@ -113,13 +125,25 @@
 }
 
 .footer-nav > li {
-    @apply mr-8;
+    @apply mr-8 font-semibold;
 }
 
 .footer-nav > li:hover {
-    @apply text-primary transition-colors duration-200;
+    @apply text-secondary transition-colors duration-200;
 }
 
 .testimonialsSwiper .swiper-button-next, .testimonialsSwiper .swiper-button-prev {
     @apply text-gray-500;
+}
+
+.page-id-12 .wp-block-columns {
+    @apply md:flex block;
+}
+
+.page-id-12 .wp-block-columns .wp-block-column .has-text-align-right {
+    @apply text-left md:text-right
+}
+
+.page-id-12 .entry-content p {
+    @apply mb-2;
 }

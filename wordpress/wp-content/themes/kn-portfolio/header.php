@@ -73,7 +73,7 @@
 
 		<?php if ( is_front_page() ) { ?>
 			<!-- Start introduction -->
-            <section class="bg-gradient-to-r from-blue-50 from-10% via-sky-100 via-30% to-blue-200 to-90%">
+            <section class="bg-gradient-to-r from-primary/40 from-1% via-primary/10 via-30% to-secondary/30 to-90%">
                 <div class="container mx-auto">
                     <div class="px-12 py-16 rounded-xl">
                         <div class="mx-auto max-w-screen-md text-gray-800">

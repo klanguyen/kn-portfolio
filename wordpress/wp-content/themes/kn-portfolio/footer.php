@@ -13,7 +13,7 @@ if(get_post_type() === \KN\ProjectsPlugin\ProjectPostType::POST_TYPE){
 </div>
 
 <?php do_action( 'kn_portfolio_content_after' ); ?>
-<section class="text-gray-50 bg-gray-800">
+<section class="text-gray-50 bg-primary">
     <div class="container mx-auto">
         <div class="py-16 px-12">
             <div class="mx-auto max-w-screen-md md:grid md:grid-cols-3 md:gap-10">
@@ -23,7 +23,7 @@ if(get_post_type() === \KN\ProjectsPlugin\ProjectPostType::POST_TYPE){
                     <p>Coffee is on me.</p>
                 </div>
                 <div class="flex items-center justify-self-end">
-                    <a href="mailto:kaylang.dev@gmail.com" class="primary-button mt-4 md:mt-0">Let's do this <i class="fa-solid fa-arrow-right ml-2"></i></a>
+                    <a href="mailto:kaylang.dev@gmail.com" class="secondary-button mt-4 md:mt-0">Let's do this <i class="fa-solid fa-arrow-right ml-2"></i></a>
                 </div>
             </div>
         </div>

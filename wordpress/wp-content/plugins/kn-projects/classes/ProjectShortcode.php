@@ -67,7 +67,7 @@ class ProjectShortcode extends Singleton
                                         $technologiesOutput
                                     .'</ul>
                                     <div class="project-actions border-t-[1px] border-gray-300 pt-4">
-                                        <a href="' . get_the_permalink() . '" class="inline-flex items-center font-medium text-gray-800 hover:text-primary transition-colors duration-200">
+                                        <a href="' . get_the_permalink() . '" class="inline-flex items-center font-medium text-gray-800 hover:text-primary hover:underline transition-colors duration-200">
                                             View Project
                                             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
