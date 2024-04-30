@@ -118,5 +118,14 @@ function kn_portfolio_widgets_init() {
             'after_widget'  => '</div>',
         )
     );
+    register_sidebar(
+        array(
+            'name'          => esc_html__( 'Featured projects', 'kn-portfolio' ),
+            'id'            => 'kn-featured-projects',
+            'description'   => esc_html__( 'Add widgets here.', 'kn-portfolio' ),
+            'before_widget' => '',
+            'after_widget'  => '',
+        )
+    );
 }
 add_action( 'widgets_init', 'kn_portfolio_widgets_init' );

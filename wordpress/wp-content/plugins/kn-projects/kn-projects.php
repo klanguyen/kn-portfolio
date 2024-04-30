@@ -15,6 +15,7 @@ namespace KN\ProjectsPlugin;
 require_once __DIR__.'/classes/Singleton.php';
 require_once __DIR__.'/classes/ProjectPostType.php';
 require_once __DIR__.'/classes/ProjectTechnologyTaxonomy.php';
+require_once __DIR__.'/classes/ProjectShortcode.php';
 /**
  * Represents a Project Plugin
  */
@@ -39,6 +40,7 @@ class KnProjectPlugin extends Singleton {
         // instantiate singletons
         ProjectPostType::getInstance();
         ProjectTechnologyTaxonomy::getInstance();
+        ProjectShortcode::getInstance();
 
         // create an activation hook so when the plugin is activated, flush permalinks cache
         function activate_plugin(): void

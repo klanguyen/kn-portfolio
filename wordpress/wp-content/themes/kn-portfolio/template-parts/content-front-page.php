@@ -60,3 +60,7 @@ $skills = array(
         <a href="/skills" class="primary-outline-button">View all skills</a>
     </div>
 </section>
+
+<?php dynamic_sidebar( 'kn-featured-projects' ); ?>
+
+
