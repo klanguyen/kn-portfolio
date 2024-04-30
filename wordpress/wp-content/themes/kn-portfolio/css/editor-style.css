@@ -97,6 +97,12 @@
 .mb-6 {
     margin-bottom: 1.5rem
 }
+.mt-3 {
+    margin-top: 0.75rem
+}
+.mt-1 {
+    margin-top: 0.25rem
+}
 .inline-block {
     display: inline-block
 }
@@ -123,6 +129,10 @@
 }
 .h-3\.5 {
     height: 0.875rem
+}
+.h-fit {
+    height: -moz-fit-content;
+    height: fit-content
 }
 .min-h-screen {
     min-height: 100vh
@@ -355,8 +365,19 @@
     padding-top: 1.5rem;
     padding-bottom: 1.5rem
 }
+.py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem
+}
+.px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem
+}
 .pt-4 {
     padding-top: 1rem
+}
+.pt-3 {
+    padding-top: 0.75rem
 }
 .text-center {
     text-align: center
@@ -455,6 +476,10 @@
 .text-white {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+.text-gray-400 {
+    --tw-text-opacity: 1;
+    color: rgb(156 163 175 / var(--tw-text-opacity))
 }
 .underline {
     text-decoration-line: underline

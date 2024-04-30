@@ -20,7 +20,7 @@ window.addEventListener('load', function () {
     e.preventDefault();
     main_navigation.classList.toggle('hidden');
   });
-  var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](".skillsSwiper", {
+  var skillsSwiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](".skillsSwiper", {
     slidesPerView: 'auto',
     spaceBetween: 30,
     freeMode: true,
@@ -35,6 +35,18 @@ window.addEventListener('load', function () {
       el: ".swiper-pagination",
       clickable: true
     }
+  });
+  var testimonialsSwiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](".testimonialsSwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true
+    },
+    loop: true
   });
 });
 

@@ -63,4 +63,37 @@ $skills = array(
 
 <?php dynamic_sidebar( 'kn-featured-projects' ); ?>
 
-
+<?php
+$q = new WP_Query([
+    'post_type' => 'testimonials',
+]);
+if($q->have_posts()):
+?>
+    <section class="mx-auto container text-gray-800">
+        <div class="py-16 flex-col justify-center text-center">
+            <div class="inline-flex w-auto bg-primary/10 p-1 rounded-md border-[1px] border-primary text-sm tracking-wide">Testimonials</div>
+            <h2 class="mt-4 text-xl lg:text-3xl font-bold mb-4">What they think about me</h2>
+            <div class="swiper testimonialsSwiper max-w-3xl flex justify-center mb-4">
+                <div class="swiper-wrapper mb-4">
+                    <?php while($q->have_posts()):
+                        $q->the_post();
+                        $company = get_post_meta(get_the_ID(), 'testimonials_company', true);
+                        $position = get_post_meta(get_the_ID(), 'testimonials_position', true);
+                    ?>
+                        <div class="swiper-slide px-16">
+                            <i class="fa-solid fa-quote-left text-gray-400 text-5xl"></i>
+                            <p class="mt-3"><?= get_the_content() ?></p>
+                            <p class="mt-3 text-lg font-semibold"><?= get_the_author() ?></p>
+                            <p class="font-medium text-gray-500"><?= $position ?> @ <?= $company ?></p>
+                        </div>
+                    <?php endwhile; ?>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+<?php
+endif;
+wp_reset_postdata();
+?>

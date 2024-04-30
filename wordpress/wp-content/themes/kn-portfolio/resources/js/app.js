@@ -9,7 +9,7 @@ window.addEventListener('load', function () {
             main_navigation.classList.toggle('hidden');
       });
 
-      var swiper = new Swiper(".skillsSwiper", {
+      var skillsSwiper = new Swiper(".skillsSwiper", {
             slidesPerView: 'auto',
             spaceBetween: 30,
             freeMode: true,
@@ -24,5 +24,18 @@ window.addEventListener('load', function () {
                   el: ".swiper-pagination",
                   clickable: true,
             },
+      });
+
+      var testimonialsSwiper = new Swiper(".testimonialsSwiper", {
+            navigation: {
+                  nextEl: ".swiper-button-next",
+                  prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                  delay: 3000,
+                  disableOnInteraction: false,
+                  pauseOnMouseEnter: true,
+            },
+            loop: true,
       });
 });
