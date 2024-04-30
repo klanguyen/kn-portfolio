@@ -14,7 +14,7 @@ docker compose up -d
 Lastly, set up required plugins using WP CLI
    ```
    wp plugin delete hello akismet
-   wp plugin install health-check query-monitor loco-translate font-awesome --activate
+   wp plugin install health-check query-monitor loco-translate font-awesome advanced-custom-fields --activate
    ```
 
 ### WordPress
