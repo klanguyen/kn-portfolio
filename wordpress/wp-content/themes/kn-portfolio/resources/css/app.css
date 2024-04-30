@@ -4,6 +4,7 @@
 @import "swiper/swiper-bundle.min.css";
 
 @import "custom.css";
+@import 'flowbite/dist/flowbite.min.css';
 
 @font-face {
     font-family: 'Poppins';

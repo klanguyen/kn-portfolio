@@ -44,6 +44,7 @@ if(get_post_type() === \KN\ProjectsPlugin\ProjectPostType::POST_TYPE){
 </div>
 
 <?php wp_footer(); ?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 
 </body>
 </html>

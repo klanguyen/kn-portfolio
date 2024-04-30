@@ -1,3 +1,9 @@
+<?php
+if(get_post_type() === \KN\ProjectsPlugin\ProjectPostType::POST_TYPE) {
+    get_template_part('template-parts/single', \KN\ProjectsPlugin\ProjectPostType::POST_TYPE);
+}
+else{
+?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<header class="entry-header mb-4">
@@ -23,3 +29,7 @@
 	</div>
 
 </article>
+
+<?php
+}
+?>
