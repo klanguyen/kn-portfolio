@@ -28,6 +28,46 @@ $skills = array(
         'name' => 'HTML5',
         'logoPath' => 'html5.svg'
     ],
+    [
+        'name' => 'Adobe Illustrator',
+        'logoPath' => 'adobe-illustrator.png'
+    ],
+    [
+        'name' => 'Adobe Photoshop',
+        'logoPath' => 'adobe-photoshop.svg'
+    ],
+    [
+        'name' => 'Adobe XD',
+        'logoPath' => 'adobe-xd.svg'
+    ],
+    [
+        'name' => 'Bootstrap',
+        'logoPath' => 'bootstrap.png'
+    ],
+    [
+        'name' => 'JavaScript',
+        'logoPath' => 'javascript.png'
+    ],
+    [
+        'name' => 'jQuery',
+        'logoPath' => 'jquery.png'
+    ],
+    [
+        'name' => 'PHP',
+        'logoPath' => 'php.svg'
+    ],
+    [
+        'name' => 'React',
+        'logoPath' => 'react.svg'
+    ],
+    [
+        'name' => 'TailwindCSS',
+        'logoPath' => 'tailwindcss.svg'
+    ],
+    [
+        'name' => 'Vue.js',
+        'logoPath' => 'vuejs.png'
+    ],
 )
 ?>
 
