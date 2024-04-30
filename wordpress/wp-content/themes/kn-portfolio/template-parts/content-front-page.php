@@ -31,7 +31,7 @@ $skills = array(
 )
 ?>
 
-<section class="mx-auto container text-gray-800 border-b-[1px] border-gray-200">
+<section class="mx-auto container text-gray-800 border-b-[1px] border-gray-200" id="about">
     <div class="py-16 md:grid md:grid-cols-3 md:gap-10">
         <img src="wp-content/themes/kn-portfolio/images/portrait.jpg" class="rounded-md mb-8 md:mb-0 lg:h-80" alt="Kayla portrait">
         <div class="col-span-2">

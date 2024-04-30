@@ -64,6 +64,10 @@
     margin-top: 2rem;
     margin-bottom: 2rem
 }
+.my-5 {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem
+}
 .mb-1 {
     margin-bottom: 0.25rem
 }
@@ -480,6 +484,10 @@
 .text-gray-400 {
     --tw-text-opacity: 1;
     color: rgb(156 163 175 / var(--tw-text-opacity))
+}
+.text-red-500 {
+    --tw-text-opacity: 1;
+    color: rgb(239 68 68 / var(--tw-text-opacity))
 }
 .underline {
     text-decoration-line: underline

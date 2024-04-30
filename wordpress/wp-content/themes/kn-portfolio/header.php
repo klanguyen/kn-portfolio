@@ -101,4 +101,7 @@
             if ( is_front_page() ) {
                 get_template_part('template-parts/content', 'front-page');
             }
+            elseif (is_post_type_archive()) {
+                get_template_part('template-parts/archive', get_post_type());
+            }
             ?>

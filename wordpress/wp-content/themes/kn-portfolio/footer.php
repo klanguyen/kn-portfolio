@@ -1,3 +1,10 @@
+<?php
+if(get_post_type() === \KN\ProjectsPlugin\ProjectPostType::POST_TYPE){
+    echo '</div>
+        </div>
+    </section>';
+}
+?>
 
 </main>
 
