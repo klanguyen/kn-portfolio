@@ -97,7 +97,7 @@
 }
 
 .primary-button:hover{
-    @apply bg-primary/80 text-white;
+    @apply scale-110;
 }
 
 .secondary-button {
@@ -105,7 +105,7 @@
 }
 
 .secondary-button:hover{
-    @apply bg-secondary/80 text-black;
+    @apply scale-110;
 }
 
 .primary-outline-button {
@@ -146,4 +146,12 @@
 
 .page-id-12 .entry-content p {
     @apply mb-2;
+}
+
+.project-item:hover {
+    @apply shadow-2xl transition-shadow duration-300;
+}
+
+.entry-content p a {
+    @apply text-primary;
 }

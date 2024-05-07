@@ -29,7 +29,7 @@ class ProjectShortcode extends Singleton
         $output = '<section class="mx-auto container text-gray-800 border-b-[1px] border-gray-200">
                         <div class="py-16 flex-col justify-center text-center">
                             <div class="inline-flex w-auto bg-primary/10 p-1 rounded-md border-[1px] border-primary text-sm tracking-wide">Featured Projects</div>
-                            <h2 class="mt-4 text-xl lg:text-3xl font-bold mb-4">Some things I\'ve built</h2>';
+                            <h2 class="mt-4 text-xl lg:text-3xl font-bold mb-4 text-primary">Some things I\'ve built</h2>';
         $query = new \WP_Query([
             'post_type' => ProjectPostType::POST_TYPE,
             'meta_query' => [
@@ -54,7 +54,7 @@ class ProjectShortcode extends Singleton
                     $technologiesOutput .= '<li class="inline-flex w-auto bg-primary/10 p-1 rounded-[3px] text-sm tracking-wide mr-2 mb-2">'. $technology->name .'</li>';
                 }
                 $briefDesc = get_post_meta(get_the_ID(), 'project_brief_description', true);
-                $output .= '<div class="max-w-sm h-fit bg-white border border-gray-200 rounded-lg shadow flex flex-col justify-start text-start mb-6 lg:mb-0">
+                $output .= '<div class="project-item max-w-sm h-fit bg-white border border-gray-200 rounded-lg shadow-sm flex flex-col justify-start text-start mb-6 lg:mb-0 hover:shadow-3xl">
                                 <a href="' . get_the_permalink() . '">
                                     <img class="rounded-t-lg" src="' . get_the_post_thumbnail_url() . '" alt="" />
                                 </a>

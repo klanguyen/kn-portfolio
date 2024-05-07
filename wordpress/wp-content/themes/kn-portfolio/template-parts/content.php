@@ -6,7 +6,7 @@ if(get_post_type() === \KN\ProjectsPlugin\ProjectPostType::POST_TYPE) :
     $technologiesOutput .= '<li class="inline-flex w-auto bg-primary/10 p-1 rounded-[3px] text-sm tracking-wide mr-2 mb-2">'. $technology->name .'</li>';
     }
     $briefDesc = get_post_meta(get_the_ID(), 'project_brief_description', true);
-    $output = '<div class="max-w-sm h-fit bg-white border border-gray-200 rounded-lg shadow flex flex-col justify-start text-start mb-6 lg:mb-0">
+    $output = '<div class="project-item max-w-sm h-fit bg-white border border-gray-200 rounded-lg shadow-sm flex flex-col justify-start text-start mb-6 lg:mb-0">
                     <a href="' . get_the_permalink() . '">
                         <img class="rounded-t-lg" src="' . get_the_post_thumbnail_url() . '" alt="" />
                     </a>
@@ -19,7 +19,7 @@ if(get_post_type() === \KN\ProjectsPlugin\ProjectPostType::POST_TYPE) :
                             $technologiesOutput
                             .'</ul>
                         <div class="project-actions border-t-[1px] border-gray-300 pt-4">
-                            <a href="' . get_the_permalink() . '" class="inline-flex items-center font-medium text-gray-800 hover:text-primary transition-colors duration-200">
+                            <a href="' . get_the_permalink() . '" class="inline-flex items-center font-medium text-gray-800 hover:text-primary transition-colors duration-200 hover:underline">
                                 View Project
                                 <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
